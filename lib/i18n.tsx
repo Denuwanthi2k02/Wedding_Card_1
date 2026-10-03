@@ -8,7 +8,7 @@ export type Lang = "en" | "si";
 
 const strings = {
   tapToOpen: { en: "Tap to open", si: "විවෘත කිරීමට තට්ටු කරන්න" },
-  invited: { en: "You are cordially invited", si: "ඔබව ආදරයෙන් ආරාධනා කරමු" },
+  invited: { en: "You are cordially invited", si: "ඔබට ආදරයෙන් ආරාධනා කරමු" },
   days: { en: "Days", si: "දින" },
   hours: { en: "Hours", si: "පැය" },
   minutes: { en: "Minutes", si: "මිනිත්තු" },
