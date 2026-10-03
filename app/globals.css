@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    @apply bg-cream font-sans text-ink antialiased;
+  }
+
+  ::selection {
+    @apply bg-gold-300 text-maroon-900;
+  }
+}
+
+@layer components {
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-maroon-700 px-6 py-3 text-sm font-bold text-cream shadow-soft transition-transform hover:scale-[1.03] active:scale-95;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-maroon-700/70 px-6 py-3 text-sm font-bold text-maroon-700 transition-transform hover:scale-[1.03] hover:bg-maroon-50 active:scale-95;
+  }
+
+  .field {
+    @apply w-full rounded-xl border border-gold-300 bg-white/80 px-4 py-2.5 text-sm text-ink outline-none transition focus:border-maroon-500 focus:ring-2 focus:ring-gold-300/60;
+  }
+}
+
+@layer utilities {
+  .pattern-dots {
+    background-image: radial-gradient(circle at 1px 1px, rgba(201, 162, 39, 0.22) 1px, transparent 0);
+    background-size: 16px 16px;
+  }
+
+  .pattern-dots-light {
+    background-image: radial-gradient(circle at 1px 1px, rgba(255, 248, 238, 0.16) 1px, transparent 0);
+    background-size: 16px 16px;
+  }
+}
