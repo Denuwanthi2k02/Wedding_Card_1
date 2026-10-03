@@ -33,7 +33,7 @@ export default function Hero() {
       >
         <div className="overflow-hidden rounded-b-[28px] rounded-t-[999px] border-4 border-gold-500 bg-peach-100 shadow-soft">
           <Image
-            src="/images/couple_1.png"
+            src="/images/couple_1.jpg"
             alt={`Cartoon illustration of ${wedding.bride.en} and ${wedding.groom.en} in traditional Sinhala wedding attire`}
             width={768}
             height={1024}
