@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import { Great_Vibes, Nunito, Noto_Sans_Sinhala } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/lib/i18n";
@@ -18,9 +19,8 @@ const sans = Nunito({
   display: "swap",
 });
 
-const sinhala = Noto_Sans_Sinhala({
-  weight: ["400", "600", "700"],
-  subsets: ["sinhala"],
+const sinhala = localFont({
+  src: "./fonts/atlas-chirani.ttf",
   variable: "--font-sinhala",
   display: "swap",
 });
